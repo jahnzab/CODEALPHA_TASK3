@@ -38,7 +38,7 @@
             var email=document.getElementById("01").value;
             var passw=document.getElementById("02").value;
           
-            if(email!=""&& passw!="" ){
+            if(email!=""&& passw.length>=5 ){
                
                    
         
@@ -46,7 +46,7 @@
 
               }
            else{
-              alert("Email or password incorrect");
+              alert("Email or password incorrect or length of password is too short");
            }
         }
         
