@@ -1,66 +1,49 @@
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section>
-    <div class="login-box">
-        <form action="javascript:void(0)">
-
-            <h2>Login</h2>
-    <div class="input-box">
-        <span class="icon"><ion-icon name="mail"></ion-icon>
-        </span>
-        <input type="email" required id="01">
-        <label>Email</label>
-    </div>
-    <div class="input-box">
-        <span class="icon"><ion-icon name="lock-open"></ion-icon></span>
-        <input type="password" required id="02">
-         <label>Password</label>
-    </div>
-    
-        
-    
-    <button type="submit" onclick="auth()" id="06">Login</button>
-   
-        </form>
-    </div>
+    <section>
+        <div class="login-box">
+            <form action="javascript:void(0)">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required id="01">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-open"></ion-icon></span>
+                    <input type="password" required id="02">
+                    <label>Password</label>
+                </div>
+                <button type="submit" onclick="auth()" id="06">Login</button>
+            </form>
+        </div>
+    </section>
     <script>
-        
-      <script>
-    function auth(form) {
-        var email = document.getElementById("01").value;
-        var passw = document.getElementById("02").value;
+        function auth(form) {
+            var email = document.getElementById("01").value;
+            var passw = document.getElementById("02").value;
 
-        if (email != "" && passw.length >= 5) {
-            // Simulate a successful login
-            
-            alert("Login sucessfully");
-         
-          
+            if (email != "" && passw.length >= 5) {
+                // Simulate a successful login
+                alert("Login successfully");
 
-            // Redirect to the about.html page
-            window.location.assign("https://jahnzab.github.io/CODEALPHA_TASK3/about.html");
-        } else {
-            // Handle the case where either email or password is empty or invalid
-            alert("Email or password incorrect or length of password is too short");
+                // Redirect to the about.html page
+                window.location.assign("https://jahnzab.github.io/CODEALPHA_TASK3/about.html");
+            } else {
+                // Handle the case where either email or password is empty or invalid
+                alert("Email or password incorrect or length of password is too short");
+            }
         }
-    }
-</script>
-
-        
-  
     </script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
