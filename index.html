@@ -35,21 +35,27 @@
     </div>
     <script>
         
-        function auth(form){
-            var email=document.getElementById("01").value;
-            var passw=document.getElementById("02").value;
-          
-            if(email!=""&& passw.length>=5 ){
-               
-                   
-        
-              window.location.assign("https://jahnzab.github.io/CODEALPHA_TASK3/about.html");
+      <script>
+    function auth(form) {
+        var email = document.getElementById("01").value;
+        var passw = document.getElementById("02").value;
 
-              }
-           else{
-              alert("Email or password incorrect or length of password is too short");
-           }
+        if (email !== "" && passw.length >= 5) {
+            // Simulate a successful login
+            alert("Login successfully");
+
+            // Store the username in local storage
+            localStorage.setItem("username", email);
+
+            // Redirect to the about.html page
+            window.location.assign("https://jahnzab.github.io/CODEALPHA_TASK3/about.html");
+        } else {
+            // Handle the case where either email or password is empty or invalid
+            alert("Email or password incorrect or length of password is too short");
         }
+    }
+</script>
+
         
   
     </script>
